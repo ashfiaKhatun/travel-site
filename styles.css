@@ -219,8 +219,61 @@ nav ul a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.good-stuff .card{
+
+.good-stuff .card {
     width: 520px;
+}
+
+/* Discount Section */
+.section {
+    height: 500px;
+    width: 1170px;
+    border-radius: 16px;
+    background: url("./Images/Group\ 39.png"), lightgray 50% / cover no-repeat;
+    margin: 20px;
+}
+
+.box {
+    width: 550px;
+    height: 370px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    transform: translateX(540px) translateY(45px);
+    text-align: left;
+    padding: 20px;
+}
+
+.titles,
+.icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.icons p {
+    color: #5A5A5D;
+}
+
+.box h5 {
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#section2 {
+    background: url("./Images/Group\ 40.png"), lightgray 50% / cover no-repeat;
+}
+
+#section2 .box {
+    transform: translateX(50px) translateY(45px);
 }
 
 /* Newsletter Section */
@@ -327,6 +380,7 @@ footer hr {
     .tours img,
     .choose .card,
     .good-stuff .card,
+    .section,
     .newsletter-content,
     .newsletter-img img {
         width: 97%;
@@ -347,6 +401,7 @@ footer hr {
     .header-name h2,
     .destination-img h4,
     .choose .card h4,
+    .box h4,
     .newsletter-content h4,
     .newsletter-img h2 {
         font-size: 20px;
@@ -435,25 +490,64 @@ footer hr {
     }
 
     /* good-stuff Section */
-    
+
     .good-stuff {
         grid-template-columns: 1fr;
     }
-    .good-stuff .card{
+
+    .good-stuff .card {
         height: 220px;
         padding: 5px;
         margin-bottom: 20px;
         padding-top: 10px;
     }
-    .good-stuff .card h4{
+
+    .good-stuff .card h4 {
         margin-top: 5px;
     }
-    .good-stuff .card p{
+
+    .good-stuff .card p {
         margin-top: -5px;
     }
-    
+
+    /* discount section */
+    .section {
+        height: 500px;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        height: 300px;
+        transform: translateX(0) translateY(135px);
+        width: 78%;
+        margin: auto;
+    }
+
+    #section2 .box {
+        transform: translateX(0) translateY(135px);
+    }
+
+    .icons img {
+        height: 24px;
+        width: 24px;
+    }
+    .box h4{
+        margin-bottom: -17px;
+    }
+
+    .box h5 {
+        font-size: 16px;
+        margin-top: -17px;
+    }
+
+    .box button {
+        width: 130px;
+        height: 40px;
+        margin-top: -13px;
+    }
+
     /* place section */
-    .place{
+    .place {
         margin-top: -80px;
     }
 
