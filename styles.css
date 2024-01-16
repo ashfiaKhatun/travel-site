@@ -5,8 +5,19 @@ body {
 }
 
 section {
-    max-width: 1170;
+    max-width: 1170px;
     margin: 50px auto;
+}
+
+.section-title {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.section-description {
+    color: #5A5A5D;
+    padding: 10px;
 }
 
 .btn-primary {
@@ -116,15 +127,37 @@ nav ul a {
 
 /* Tours section */
 .tours {
-    max-width: 1170px;
     display: flex;
     gap: 50px;
 }
 
-.tour-content {
-    color: rgba(19, 19, 24, 0.70);
-    padding: 10px;
+/* Destination Section */
+.destination {
+    text-align: center;
 }
+
+.destination-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+.destination-img div{
+    height: 300px;
+}
+.destination-img img{
+    z-index: -1;
+    position: relative;
+    bottom: 80px;
+    background-color: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray -101px -108.075px / 135.253% 172.05% no-repeat;
+}
+
+.destination-img h4 {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+    transform: translateY(120px);
+}
+
 
 /* Responsive styles */
 @media screen and (max-width: 600px) {
@@ -136,7 +169,8 @@ nav ul a {
         width: 97%;
         margin: auto;
     }
-    .tours{
+
+    .tours, .destination-img {
         flex-direction: column;
         margin-top: 20px;
         gap: 20px;
@@ -166,7 +200,21 @@ nav ul a {
         padding: 16px;
         gap: 14px;
     }
-    .tours{
-        
+    .destination-img{
+        align-items: center;
     }
+    .destination-img div{
+        height: 176px;
+        width: 97%;
+    }
+    .destination-img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        object-fit:cover;
+    }
+    .destination-img h4{
+        transform: translateY(60px);
+    }
+    
 }
