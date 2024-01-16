@@ -5,6 +5,7 @@ body {
 }
 
 section {
+    text-align: center;
     max-width: 1170px;
     margin: 100px auto;
 }
@@ -131,10 +132,11 @@ nav ul a {
     gap: 50px;
 }
 
-/* Destination Section */
-.destination {
-    text-align: center;
+.tour-content {
+    text-align: left;
 }
+
+/* Destination Section */
 
 .destination-img {
     display: flex;
@@ -197,7 +199,8 @@ nav ul a {
 
 }
 
-.choose .card h4 {
+.choose .card h4,
+.newsletter h4 {
     color: #131318;
     font-size: 24px;
     font-weight: 800;
@@ -207,16 +210,78 @@ nav ul a {
     display: flex;
 }
 
+/* Newsletter Section */
+.newsletter {
+    display: flex;
+    gap: 24px;
+}
+
+.newsletter-content {
+    text-align: left;
+    padding-left: 20px;
+    width: 474px;
+    height: 422px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+
+.newsletter-content hr {
+    width: 393px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    margin: 5px auto;
+    border: none;
+}
+
+.newsletter-content input {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    color: rgba(19, 19, 24, 0.30);
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.newsletter-img div {
+    width: 324px;
+    height: 120px;
+    transform: translateX(340px) translateY(-197px) rotate(-19.628deg);
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FF5400;
+    color: #FFF;
+
+}
+
+.newsletter-img p {
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.newsletter-img h2 {
+    margin-top: -20px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
 
 
 /* Responsive styles */
 @media screen and (max-width: 600px) {
+
     /* shared style */
     header,
     .banner,
     .banner p,
     .tours img,
-    .choose .card {
+    .choose .card,
+    .newsletter-content, 
+    .newsletter-img {
         width: 97%;
         margin: auto;
     }
@@ -224,7 +289,8 @@ nav ul a {
     .tours,
     .destination-img,
     .banner div,
-    .choose-img {
+    .choose-img,
+    .newsletter {
         flex-direction: column;
         margin-top: 20px;
         gap: 20px;
@@ -232,7 +298,8 @@ nav ul a {
 
     .section-title,
     .destination-img h4,
-    .choose .card h4 {
+    .choose .card h4,
+    .newsletter-content h4 {
         font-size: 20px;
     }
 
@@ -285,6 +352,7 @@ nav ul a {
         width: 255px;
         height: 52px;
     }
+
     /* destination section */
     .destination-img {
         align-items: center;
@@ -305,16 +373,29 @@ nav ul a {
     .destination-img h4 {
         transform: translateY(45px);
     }
+
     /* choose section */
-    
+
     .choose .card svg {
         width: 48px;
         height: 48px;
     }
-    .choose .card{
+
+    .choose .card {
         height: 289px;
         padding: 5px;
         margin-bottom: 20px;
+    }
+    /* newsletter section */
+    .newsletter-content{
+        width: 94%;
+    }
+    
+    .newsletter-content h4 {
+        font-size: 20px;
+    }
+    .newsletter-content input{
+        width: 90%;
     }
 
 }
