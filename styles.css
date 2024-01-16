@@ -106,7 +106,7 @@ nav ul a {
     margin: 24px auto;
 }
 
-.banner div {
+.banner>div {
     display: inline-flex;
     padding: 16px;
     align-items: flex-start;
@@ -117,7 +117,7 @@ nav ul a {
 }
 
 .banner input {
-    width: 174px;
+    width: 190px;
     height: 52px;
     flex-shrink: 0;
     border-radius: 8px;
@@ -175,6 +175,7 @@ nav ul a {
     margin: 20px;
     text-align: left;
     padding-left: 20px;
+    padding-top: 20px;
 }
 
 #box1 {
@@ -194,14 +195,15 @@ nav ul a {
 
 }
 
-.choose .card svg {
+.choose .card img {
     width: 64px;
     height: 64px;
 
 }
 
 .choose .card h4,
-.newsletter h4 {
+.newsletter h4,
+.box h4 {
     color: #131318;
     font-size: 24px;
     font-weight: 800;
@@ -210,6 +212,54 @@ nav ul a {
 .choose-img {
     display: flex;
 }
+
+/* Discount Section */
+.section {
+    height: 500px;
+    width: 1170px;
+    border-radius: 16px;
+    background: url("./Images/Group\ 39.png"), lightgray 50% / cover no-repeat;
+    margin: 20px;
+}
+
+.box {
+    width: 550px;
+    height: 370px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    transform: translateX(540px) translateY(45px);
+    text-align: left;
+    padding: 20px;
+}
+
+.titles,
+.icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.icons p {
+    color: #5A5A5D;
+}
+
+.box h5 {
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+}
+#section2 .box{
+    transform: translateX(50px) translateY(45px);
+}
+
 
 /* Newsletter Section */
 .newsletter {
@@ -407,7 +457,7 @@ footer hr {
 
     /* choose section */
 
-    .choose .card svg {
+    .choose .card img {
         width: 48px;
         height: 48px;
     }
@@ -416,7 +466,12 @@ footer hr {
         height: 289px;
         padding: 5px;
         margin-bottom: 20px;
+        padding-top: 10px;
     }
+
+    /* Discount Section */
+
+
 
     /* newsletter section */
     .newsletter-content {
@@ -476,7 +531,8 @@ footer hr {
         width: 90%;
         margin-top: 20px;
     }
-    .text-footer{
+
+    .text-footer {
         font-size: 14px;
         margin-top: 20px;
     }
