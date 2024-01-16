@@ -213,53 +213,6 @@ nav ul a {
     display: flex;
 }
 
-/* Discount Section */
-.section {
-    height: 500px;
-    width: 1170px;
-    border-radius: 16px;
-    background: url("./Images/Group\ 39.png"), lightgray 50% / cover no-repeat;
-    margin: 20px;
-}
-
-.box {
-    width: 550px;
-    height: 370px;
-    border-radius: 16px;
-    border: 2px solid #FFF;
-    background: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(2.5px);
-    transform: translateX(540px) translateY(45px);
-    text-align: left;
-    padding: 20px;
-}
-
-.titles,
-.icons {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    align-items: center;
-}
-
-.icons img {
-    width: 24px;
-    height: 24px;
-}
-
-.icons p {
-    color: #5A5A5D;
-}
-
-.box h5 {
-    color: #FF5400;
-    font-size: 20px;
-    font-weight: 800;
-}
-#section2 .box{
-    transform: translateX(50px) translateY(45px);
-}
-
 
 /* Newsletter Section */
 .newsletter {
