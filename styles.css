@@ -6,7 +6,7 @@ body {
 
 section {
     max-width: 1170px;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .section-title {
@@ -160,24 +160,86 @@ nav ul a {
     transform: translateY(120px);
 }
 
+/* Choose Section */
+.choose {
+    text-align: center;
+}
+
+.choose .card {
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    margin: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#box1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+#box2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+#box3 {
+    margin: auto;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+
+}
+
+.choose .card svg {
+    width: 64px;
+    height: 64px;
+
+}
+
+.choose .card h4 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.choose-img {
+    display: flex;
+}
+
+
 
 /* Responsive styles */
 @media screen and (max-width: 600px) {
-
+    /* shared style */
     header,
     .banner,
     .banner p,
-    .tours img {
+    .tours img,
+    .choose .card {
         width: 97%;
         margin: auto;
     }
 
     .tours,
-    .destination-img {
+    .destination-img,
+    .banner div,
+    .choose-img {
         flex-direction: column;
         margin-top: 20px;
         gap: 20px;
     }
+
+    .section-title,
+    .destination-img h4 {
+        font-size: 20px;
+    }
+
+    .section-description {
+        font-size: 14px;
+    }
+
+    /* header section */
 
     .banner h1 {
         font-size: 22px;
@@ -195,9 +257,11 @@ nav ul a {
     header .menu-bar {
         display: block;
     }
-    .header-name{
+
+    .header-name {
         align-items: center;
     }
+
     .header-name img {
         width: 28.724px;
         height: 33.516px;
@@ -207,14 +271,20 @@ nav ul a {
         font-size: 21.543px;
     }
 
+
     .banner div {
-        flex-direction: column;
         align-items: center;
-        width: 192px;
+        width: 287px;
         padding: 16px;
         gap: 14px;
     }
 
+    .banner div input,
+    button {
+        width: 255px;
+        height: 52px;
+    }
+    /* destination section */
     .destination-img {
         align-items: center;
     }
@@ -232,7 +302,18 @@ nav ul a {
     }
 
     .destination-img h4 {
-        transform: translateY(60px);
+        transform: translateY(45px);
+    }
+    /* choose section */
+    
+    .choose .card svg {
+        width: 48px;
+        height: 48px;
+    }
+    .choose .card{
+        height: 289px;
+        padding: 5px;
+        margin-bottom: 20px;
     }
 
 }
