@@ -231,7 +231,8 @@ nav ul a {
     }
 
     .section-title,
-    .destination-img h4 {
+    .destination-img h4,
+    .choose .card h4 {
         font-size: 20px;
     }
 
