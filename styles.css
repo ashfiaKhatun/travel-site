@@ -213,6 +213,15 @@ nav ul a {
     display: flex;
 }
 
+/* Good Stuff Section */
+
+.good-stuff {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.good-stuff .card{
+    width: 520px;
+}
 
 /* Newsletter Section */
 .newsletter {
@@ -317,6 +326,7 @@ footer hr {
     .banner p,
     .tours img,
     .choose .card,
+    .good-stuff .card,
     .newsletter-content,
     .newsletter-img img {
         width: 97%;
@@ -340,6 +350,7 @@ footer hr {
     .newsletter-content h4,
     .newsletter-img h2 {
         font-size: 20px;
+        padding-left: 10px;
     }
 
     .section-description {
@@ -410,20 +421,41 @@ footer hr {
 
     /* choose section */
 
-    .choose .card img {
+    .card img {
+        margin: 10px;
         width: 48px;
         height: 48px;
     }
 
-    .choose .card {
+    .choose-card .card {
         height: 289px;
         padding: 5px;
         margin-bottom: 20px;
         padding-top: 10px;
     }
 
-    /* Discount Section */
-
+    /* good-stuff Section */
+    
+    .good-stuff {
+        grid-template-columns: 1fr;
+    }
+    .good-stuff .card{
+        height: 220px;
+        padding: 5px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    .good-stuff .card h4{
+        margin-top: 5px;
+    }
+    .good-stuff .card p{
+        margin-top: -5px;
+    }
+    
+    /* place section */
+    .place{
+        margin-top: -80px;
+    }
 
 
     /* newsletter section */
