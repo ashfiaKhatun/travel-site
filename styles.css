@@ -280,10 +280,10 @@ nav ul a {
     .banner p,
     .tours img,
     .choose .card,
-    .newsletter-content, 
-    .newsletter-img {
+    .newsletter-content,
+    .newsletter-img img {
         width: 97%;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .tours,
@@ -297,9 +297,11 @@ nav ul a {
     }
 
     .section-title,
+    .header-name h2,
     .destination-img h4,
     .choose .card h4,
-    .newsletter-content h4 {
+    .newsletter-content h4,
+    .newsletter-img h2 {
         font-size: 20px;
     }
 
@@ -334,11 +336,6 @@ nav ul a {
         width: 28.724px;
         height: 33.516px;
     }
-
-    .header-name h2 {
-        font-size: 21.543px;
-    }
-
 
     .banner div {
         align-items: center;
@@ -386,16 +383,31 @@ nav ul a {
         padding: 5px;
         margin-bottom: 20px;
     }
+
     /* newsletter section */
-    .newsletter-content{
+    .newsletter-content {
         width: 94%;
     }
-    
+
     .newsletter-content h4 {
         font-size: 20px;
     }
-    .newsletter-content input{
+
+    .newsletter-content input {
         width: 90%;
     }
+
+    .newsletter-img div {
+        width: 214.023px;
+        height: 79.268px;
+        transform: translateX(170px) translateY(-130px) rotate(-19.628deg);
+    }
+    .newsletter-img p{
+        padding-top: 13px;
+        padding-bottom: 7px;
+        font-size: 15.854px;
+    }
+
+
 
 }
