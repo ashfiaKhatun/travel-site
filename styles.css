@@ -1,5 +1,5 @@
 /* Shared styles */
-body {
+body, footer {
     font-family: 'Mulish', sans-serif;
     max-width: 1440px;
 }
@@ -393,21 +393,31 @@ nav ul a {
         font-size: 20px;
     }
 
-    .newsletter-content input {
+    .newsletter-content input, .newsletter-content hr {
         width: 90%;
+    }
+    .newsletter-img img{
+        display: none;
+    }
+    .newsletter-img{
+        background-image: url("./Images/Rectangle\ 8-1.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 300px;
+        position: relative;
     }
 
     .newsletter-img div {
         width: 214.023px;
         height: 79.268px;
-        transform: translateX(170px) translateY(-130px) rotate(-19.628deg);
+        transform: rotate(-19.628deg);
+        position: absolute;
+        right: 10px;
+        bottom: 70px;
     }
     .newsletter-img p{
-        padding-top: 13px;
+        padding-top: 0px;
         padding-bottom: 7px;
         font-size: 15.854px;
     }
-
-
-
 }
